@@ -1,0 +1,16 @@
+#include <stdio.h>
+void main()
+{
+	FILE* fichero;
+	char linea[81];
+	fichero = fopen("prueba.txt", "rt");
+
+	if (fichero == NULL) {
+		printf("No existe el fichero!\n");
+		exit(1);
+	}
+	fgets(linea, 80, fichero);
+	puts (linea);
+	fclose (fichero);
+}
+	

@@ -1,0 +1,254 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Laboratorio de Programación (300CIP007):
+\begin_inset Newline newline
+\end_inset
+
+MiniProyecto 02: Diccionario Dinámico Inglés-Español
+\end_layout
+
+\begin_layout Author
+Prof.
+ Luis Garreta
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Address
+\align center
+
+\series medium
+Ingeniería de Sistemas y Computación
+\begin_inset Newline newline
+\end_inset
+
+Pontificia Universidad Javeriana – Cali
+\end_layout
+
+\begin_layout Section
+Descripción
+\end_layout
+
+\begin_layout Standard
+El diccionario inglés-español permite, en su nivel básico, mostrar la traducción
+ de una palabra, ya sea en inglés o en español.
+ Al momento de iniciar la aplicación, el diccionario se carga desde un 
+\series bold
+archivo binario
+\series default
+ de palabras hacia una estructura tipo lista enlazada.
+ Cada registro del archivo de palabras tiene dos arreglos de caracteres
+ uno para la palabra en inglés y el otro para la palabra en español.
+ La interacción se realiza de dos maneras: una directa sin opciones y otra
+ con opciones.
+ En el primer caso, directa sin opciones, la aplicación se ejecuta con un
+ único parámetro de entrada que es la palabra a buscar y como resultado
+ se imprime unicamente la respectiva traducción.
+ En el segundo caso, con opciones, la aplicación se ejecuta sin parámetros
+ y como resultado se despliega un menú de opciones para que el usuario interactu
+é.
+ 
+\end_layout
+
+\begin_layout Standard
+Las posibles opciones son las siguientes (puede incluir más si tiene más
+ imaginación):
+\end_layout
+
+\begin_layout Description
+s: Salir:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Termina el Programa
+\end_layout
+
+\end_deeper
+\begin_layout Description
+b: Busqueda exacta:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Busca una palabra exactamente como aparece en el diccionario
+\end_layout
+
+\end_deeper
+\begin_layout Description
+a: Adicionapr:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Adiciona una nueva palabra al diccionario de forma lexicográfica, es decir
+ en orden alfabético
+\end_layout
+
+\end_deeper
+\begin_layout Description
+e: Eliminar:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Elimina la palabra del diccionario
+\end_layout
+
+\end_deeper
+\begin_layout Description
+m: Modificar:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Cambia la traducción de una palabra
+\end_layout
+
+\end_deeper
+\begin_layout Description
+i: Búsqueda inteligente:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Dado una palabra "mal escrita" o que no existe en el diccionario de forma
+ exacta, la aplicación muestra una lista de "posibles" palabras con sus
+ respectivas traducciones.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Requisitos
+\end_layout
+
+\begin_layout Itemize
+El código debe seguir completamente el enfoque procedimental, es decir,
+ todo bloque que involucre un proceso bien definido se debe definir como
+ una función con parámetros de entrada (parámetros por valor o por referencia)
+ y posibles valores de retorno.
+ Tenga en cuenta que las funciones resuelven subproblemas bien concretos,
+ que ayudan a ver el código más legible, reducido, y con la posibilidad
+ de reusarlas en otros llamados.
+\end_layout
+
+\begin_layout Itemize
+Todo debe estar en GIT
+\end_layout
+
+\begin_layout Itemize
+Pueden realizarlo en grupos, pero para la sustentación se seleccionará una
+ sola persona.
+\end_layout
+
+\begin_layout Itemize
+Debe funcionar en windows o linux sin ningún problemas.
+\end_layout
+
+\begin_layout Itemize
+Se realizarán pruebas o quizes individuales sobre el proyecto.
+\end_layout
+
+\begin_layout Section
+Fecha de Entrega
+\end_layout
+
+\begin_layout Itemize
+Semana siguiente a la llegada 24 de Abril
+\end_layout
+
+\begin_layout Section
+Recursos
+\end_layout
+
+\begin_layout Itemize
+En el sitio del curso se encuentra los archivos necesarios del diccionario
+ y código para iniciar su proyecto.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

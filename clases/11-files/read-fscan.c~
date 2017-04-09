@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+	FILE* fichero;
+	char linea [80];
+	char caracter;
+	int valor;
+	char cadTmp [20];
+	char cadTmp2 [20];
+	char *cadena = (char *)malloc (sizeof (char)*30); 
+
+
+	fichero = fopen("prueba2.txt", "rt");
+
+	if (fichero == NULL) {
+		printf("No existe el fichero!\n");
+		exit(1);
+	}
+	fgets (linea, 20, fichero);
+	printf ("%s", linea);
+	printf (">>>\n");
+	for (int i=33;i<128;printf ("%d\t%c\n", i,i),i++);
+	fscanf (fichero, "%5s%5s%2c, %5s\n", cadTmp, cadTmp2, &caracter, cadena);
+	printf ("%5s:%5d: %c: %s\n", cadTmp, valor, caracter, cadena);
+	printf ("cad:%s\n",cadTmp2);
+	sscanf (cadTmp2, "%d\n",&valor);
+	printf ("%d\n", valor);
+	fclose (fichero);
+}
+	

@@ -1,0 +1,142 @@
+
+<!-- saved from url=(0106)https://www.csee.umbc.edu/courses/undergraduate/CMSC201/fall06/lectures/pointerstopointers/ptrarrays.shtml -->
+<html class="wf-lato-n4-active wf-lato-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title> UMBC CMSC 201 </title><link rel="stylesheet" href="./css" media="all"><link rel="stylesheet" href="./css" media="all">
+</head>
+
+<body text="#000000" bgcolor="#FFFFFF">
+
+
+
+<title>UMBC CS 201, Fall 06</title>
+
+<meta name="description" content="Web pages for the UMBC courses
+CMSC201 -- Introduction to Computer Science -- for the
+Fall 2006 semester">
+
+<meta http-equiv="Custodian Contact" content="Sue Evans, UMBC,
+bogar@cs.umbc.edu, 410-455-3964">
+
+<meta http-equiv="Reply to" content="bogar@cs.umbc.edu">
+
+
+
+
+
+<table width="100%">
+<tbody><tr>
+<td align="left">
+<font color="BB000" size="+1"><b>UMBC</b> CMSC 201 <br>Fall '06</font><br>
+
+<font size="-2" color="BB000">
+
+<a href="http://www.cs.umbc.edu/" target="_top">CSEE</a>
+   |      
+<a href="http://www.cs.umbc.edu/courses/undergraduate/201/" target="_top">201</a>
+   |     
+<a href="http://www.cs.umbc.edu/courses/undergraduate/201/fall06/index.shtml" target="_top">201 F'06</a>
+   |     
+<a href="http://www.cs.umbc.edu/courses/undergraduate/201/fall06/lectures/index.shtml" target="_top">lectures</a>
+   |     
+<a href="http://www.cs.umbc.edu/courses/undergraduate/201/fall06/news/index.shtml" target="_top">news</a>
+   |    
+<a href="http://www.cs.umbc.edu/courses/undergraduate/201/fall06/administrivia/general.shtml" target="_top">help</a>
+</font>
+</td>
+<td align="right">
+<form action="https://www.csee.umbc.edu/~dhood2/cgi-bin/cmsc201/search.cgi" method="post" target="_top">
+  <label>Search Notes: <input size="20" name="query" value=""></label>
+  <input type="submit" value="Search">
+  <input type="hidden" name="semester" value="fall06"> 
+</form>
+</td>
+</tr></tbody></table>
+<hr noshade="" size="4" width="100%" align="left">
+<p>
+
+
+
+
+
+
+
+</p><center>
+<h1> Arrays of Pointers </h1>
+</center>
+
+Since variables can be pointers, it should come as no surprise that
+we can create arrays of pointers.  We declare  variables to be
+"pointer to int" using <b><tt>int *</tt></b>.  We declare arrays using
+brackets (<b><tt>[ ] </tt></b>).  We can combine them to declare
+an "array of pointers to int" with
+<xmp>
+    int *pInts[5];
+</xmp>
+This declares <b><tt>pInts</tt></b> to be an array of 5 pointers to int.
+<br>
+that is, pInts[0] can point to some int, pInts[1] can point to another int,
+and so on.  Pictorially, we have
+<p>
+<img src="./ptrarray.jpg">
+</p><p>
+One of the most common uses for arrays of pointers is an array of
+character pointers.  Each character pointer points to a string.
+We can declare an array of char pointers and initialize them to
+essentially create an array of strings.  For example
+</p><xmp>
+    char *months[12] = {"January",   "February", 
+                        "March",    "April",
+                        "May",       "June", 
+                        "July",     "August",
+                        "September", "October", 
+                        "November", "December"};
+</xmp>
+
+which we can think of as looking like this:
+<p>
+<img src="./months.jpg">
+</p><p>
+then we can reference
+</p><xmp>
+     months[3] to mean "April",
+</xmp>
+
+An array of "pointers to chars" is used to pass command line arguments
+to your program.
+
+<p>
+</p><hr noshade="" size="4" width="100%" align="left">
+
+<font size="-2" color="BB000">
+
+<a href="http://www.cs.umbc.edu/" target="_top"> CSEE </a>
+   |      
+<a href="http://www.cs.umbc.edu/courses/undergraduate/201/" target="_top">
+201</a>
+   |     
+<a href="http://www.cs.umbc.edu/courses/undergraduate/201/fall06/index.shtml" target="_top">201 F'06</a>
+   |     
+<a href="http://www.cs.umbc.edu/courses/undergraduate/201/fall06/lectures/index.shtml" target="_top"> lectures</a>
+   |     
+<a href="http://www.cs.umbc.edu/courses/undergraduate/201/fall06/news/index.shtml" target="_top"> news </a>
+   |    
+<a href="http://www.cs.umbc.edu/courses/undergraduate/201/fall06/administrivia/general.shtml" target="_top"> help </a>
+</font>
+<p>
+
+
+
+
+
+
+</p><center> Tuesday, 22-Aug-2006 07:14:11 EDT </center>
+<xmp>
+
+
+
+</xmp>
+
+
+
+
+</body><div class="XTranslate"><div data-reactroot="" class="popup-content resolved"></div></div></html>

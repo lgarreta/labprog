@@ -1,0 +1,9 @@
+#include <stdio.h>
+void main()
+{
+	FILE* fichero;
+	fichero = fopen("prueba2.txt", "wt");
+	fprintf (fichero, "Hola\n");
+	fprintf (fichero, "%s,%5d,%2c,%20s\n", "Mundo", 343, 'c', "Adios");
+	fclose (fichero);
+}
