@@ -1,0 +1,23 @@
+abacterial:abacteriano
+abbreviation:abreviatura
+accommodation:alojamiento
+adventurous:aventurado
+boil (to -):hervir
+bromide:bromuro
+carbohydrate:carbohidrato
+chic:elegante
+coast:costa
+diary:diario
+diurnal:diurno
+endure (to -):soportar
+enduring:paciente
+enema:enema
+enemy:enemigo
+enervate (to -):enervar
+enervating:enervante
+hoe:azada
+hog:cerdo
+hogshead:pipa
+tenderness:ternura
+virtuous:virtuoso
+whiskey:whisky
