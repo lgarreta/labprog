@@ -56,11 +56,11 @@ ArbolBin *find(int elem, ArbolBin *t)
     return NULL;
   }
 
-  if (elem < t->raiz)
+  if (elem < t->data)
   {
     return find(elem, t->izq);
   }
-  else if (elem > t->raiz)
+  else if (elem > t->data)
   {
     return find(elem, t->der);
   }
@@ -84,17 +84,17 @@ ArbolBin * insert(int value, ArbolBin * t)
 	    return t;
     }
 
-    new_node->raiz = value;
+    new_node->data = value;
 
 	  new_node->izq = new_node->der = NULL;
 	  return new_node;
   }
   
-  if (value < t->raiz) 
+  if (value < t->data) 
   {
     t->izq = insert(value, t->izq);
   } 
-  else if (value > t->raiz) 
+  else if (value > t->data) 
   {
 	  t->der = insert(value, t->der);
   } 
@@ -115,19 +115,19 @@ ArbolBin * delete(int value, ArbolBin * t)
   
   if (t==NULL) return NULL;
   
-  if (value < t->raiz) 
+  if (value < t->data) 
   {
     t->izq = delete(value, t->izq);
   } 
-  else if (value > t->raiz) 
+  else if (value > t->data) 
   {
 	  t->der = delete(value, t->der);
   } 
   else if (t->izq && t->der)
   {
     tmp_cell = find_min(t->der);
-    t->raiz = tmp_cell->raiz;
-    t->der = delete(t->raiz, t->der);
+    t->data = tmp_cell->data;
+    t->der = delete(t->data, t->der);
   }
   else
   { 
@@ -208,7 +208,7 @@ asciinode * build_ascii_tree_recursive(ArbolBin * t)
     node->der->parent_dir = 1;
   }
 
-  sprintf(node->label, "%d", t->raiz);
+  sprintf(node->label, "%d", t->data);
   node->lablen = strlen(node->label);
 
   return node;
@@ -438,15 +438,15 @@ void main()
   
   make_empty(root);
 
-  printf("\nAfter inserting raiz 10..\n");
+  printf("\nAfter inserting data 10..\n");
   root = insert(10, root);
   dibujarBin(root);
 
-  printf("\nAfter inserting raiz 5..\n");
+  printf("\nAfter inserting data 5..\n");
   root = insert(5, root);
   dibujarBin(root);
 
-  printf("\nAfter inserting raiz 15..\n");
+  printf("\nAfter inserting data 15..\n");
   root = insert(15, root);
   dibujarBin(root);
 

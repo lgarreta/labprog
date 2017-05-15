@@ -3,13 +3,12 @@
 typedef struct nodoBin ArbolBin;
 
 struct nodoBin {
-    int raiz;
-    ArbolBin *izq;
-    ArbolBin *der;
+    int data;
+    ArbolBin *left;
+    ArbolBin *right;
 };
 
 
-ArbolBin *crearNodoBin (int raiz);
-void printInorden (ArbolBin *);
+ArbolBin *crearNodoBin (int data);
 void dibujarBin (ArbolBin *);
 #endif
